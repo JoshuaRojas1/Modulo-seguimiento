@@ -23,11 +23,13 @@ export class OpportunityService {
     // CREATE
 
     public save(opportunity: Opportunity): Observable<Opportunity>{
-      return this.http.post<Opportunity>(this.url+"/save", opportunity, this.httpOptions)
+      return this.http.post<Opportunity>(this.url+"/save", opportunity, this.httpOptions);
     }
 
     // READ
+    public findById(id: number): Observable<Opportunity>{
+      return this.http.get<Opportunity>(this.url+"/"+id, this.httpOptions);
+    }
 
-    
 
 }

@@ -4,7 +4,8 @@ import { OpportunityComponent } from './feature/opportunity/opportunity.componen
 
 const routes: Routes = [
 
-  {path: 'opportunity', component: OpportunityComponent}
+  {path: 'opportunity', component: OpportunityComponent},
+  {path: 'opportunity/:id', component: OpportunityComponent}
 
 ];
 
