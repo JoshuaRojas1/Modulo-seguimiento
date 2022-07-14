@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'edu.yavirac.crud-opportunities-crm-backend' is invalid and this project uses 'edu.yavirac.crudopportunitiescrmbackend' instead.
+* The original package name 'edu-yavirac-jef.crm-bakend-jef' is invalid and this project uses 'eduyaviracjef.crmbakendjef' instead.
 
 # Getting Started
 
