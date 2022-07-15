@@ -31,11 +31,11 @@
       <h2 class="card-title justify-center font-bold uppercase" >Crud <span class="text text-primary">Oportunidad</span></h2>
       <div class="grid">
         <label class="text text-sm" for="">Monto:</label>
-        <input class="input input-primary mt-1 mb-1" type="text" placeholder="Indicar el monto estimado..." [(ngModel)] = "currentOpportunity.monto">
+        <input class="input input-primary mt-1 mb-1" type="text" placeholder="Indicar el monto estimado..." [(ngModel)]="currentOpportunity.monto">
         <div class="form-control grid">
           <label class="label cursor-pointer justify-start">
             <span class="label-text mr-2 ">Activo</span>
-            <input type="checkbox" class="toggle" checked />
+            <input type="checkbox" class="toggle" checked="" [(ngModel)]="currentOpportunity.enable" />
           </label>
         </div>
       </div>

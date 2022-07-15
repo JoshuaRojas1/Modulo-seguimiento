@@ -1,0 +1,33 @@
+<div class="grid justify-center mt-4 gap-2">
+    <div class="card card-compact w-96 glass bg-base-100 shadow-2xl shadow-teal-300">
+        <div class="card-body">
+            <h2 class="card-title justify-center font-bold uppercase">Crud de <span class="text-blue-600">Asesor</span>
+            </h2>
+            <div class="grid ">
+                <label for="">Nombre:</label>
+                <input class="input input-bordered input-info w-full max-w-xs" type="text" placeholder="Ejemplo: Juan" [(ngModel)]="currentAsesor.nombre">
+                <label for="">Correo:</label>
+                <input class="input input-bordered input-info w-full max-w-xs" type="text"
+                    placeholder="example@gmail.com"[(ngModel)]="currentAsesor.correo">
+                <label for="">Telefono:</label>
+                <input class="input input-bordered input-info w-full max-w-xs" type="text"
+                    placeholder="Ejemplo: 09-000-000" [(ngModel)]="currentAsesor.telefono">
+                <label for="">Fecha de creación:</label>
+                <input class="input input-bordered input-info w-full max-w-xs" type="date" [(ngModel)]="currentAsesor.created">
+                <label for="">Fecha de actualización:</label>
+                <input class="input input-bordered input-info w-full max-w-xs" type="date" [(ngModel)]="currentAsesor.update">
+                <div class="form-control">
+                    <label class="label cursor-pointer justify-start">
+                        <input type="checkbox" class="toggle toggle-primary" [(ngModel)]="currentAsesor.activo">
+                        <span class="label-text ml-4">Activo</span>
+                    </label>
+                </div>
+            </div>
+            <div class="card-actions justify-end">
+                <button class="btn  btn-primary" (click)="save()">Guardar</button>
+                <button class="btn   btn-accent">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+</div>
