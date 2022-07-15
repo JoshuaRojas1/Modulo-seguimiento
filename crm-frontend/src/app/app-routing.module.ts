@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { OpportunityComponent } from './feature/opportunity/opportunity.component';
+import { PersonComponent } from './feature/person/person.component';
 
 const routes: Routes = [
-
-  {path: 'opportunity', component: OpportunityComponent}
-
+  {path: 'person', component:PersonComponent},
+  {path: 'person/:id', component:PersonComponent}
 ];
 
 @NgModule({

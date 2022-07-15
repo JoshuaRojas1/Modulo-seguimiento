@@ -1,0 +1,41 @@
+<div class="grid justify-center mt-10 pap-2">
+ <div class="card card-compact bg-base-100 shadow-2xl shadow-black">
+   <div class="card-body items-center text-center">
+    <h2 class="card-title font-bold uppercase justify-center">Crud<span class="text-primary">equipo ventas</span></h2>
+    <div class="grid ">
+    <label>Nombre:</label>
+    <input class="input input-primary m-3" type="text" placeholder="Ejemplo: Ana Torres"
+    [(ngModel)]="currentPerson.name">
+    <label>Identificación:</label>
+    <input class="input input-primary m-3" type="text" placeholder="Ejemplo: 1723748100"
+    [(ngModel)]="currentPerson.dni">
+
+    <label>Fecha de creación:</label>
+      <input class="input input-primary m-3"  type="date" name="creación"  [(ngModel)]="currentPerson.create"/>
+
+    <label>Fecha de actualización:</label>
+      <input class="input input-primary m-3" type="date" name="actualización" [(ngModel)]="currentPerson.update"/>
+
+    <div class="form-control">
+      <label class="label cursor-pointer">
+        <span class="label-text">Activo</span>
+        <input type="checkbox" class="toggle toggle-secondary" checked [(ngModel)]="currentPerson.enable" />
+      </label>
+    </div>
+    </div>
+    <div class="card-actions">
+      <button class="btn btn-secondary btn-sm">Cancelar</button>
+      <button class="btn btn-primary btn-sm" (click)="save()" >Guardar</button>
+     </div>
+   </div>
+ </div>
+</div>
+<div class="card card-compact bg-green-250 shadow-2xl shadow-black">
+  <div class="card-body ">
+<div class="card-title">Precaución!</div>
+  <p class="text-xs p-4">Recuerde que luego de la eliminación no se podra recuperar la data</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-warning btn-sm m-4"(click)="delete()">Eliminar</button>
+  </div>
+</div>
+</div>
