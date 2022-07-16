@@ -21,13 +21,12 @@ export class PersonService {
   }
  //Read
  public findById(id: number): Observable<Person>{
-  return this.http.get<Person>(this.url+"/"+id, this.httpOptions);
+      return this.http.get<Person>(this.url+"/"+id, this.httpOptions);
  }
 
-
   //DELETE
-  public deleteById(id:number): Observable<void>{
-          return this.http.delete<void>(this.url+"/delete"+id, this.httpOptions);
+  public deleteById(id: number): Observable<void>{
+       return this.http.delete<void>(this.url+"/delete/"+id, this.httpOptions);
   }
 
 }

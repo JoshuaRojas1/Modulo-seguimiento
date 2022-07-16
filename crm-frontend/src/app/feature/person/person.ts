@@ -1,11 +1,12 @@
 export interface Person {
 
-    id: number,
+      id: number,
     name: String,
-    dni: String,
-    create: Date,
-   update: Date,
-   enable: Boolean
+     dni: String,
+  create: Date,
+  update: Date,
+  enable: Boolean
+
 
 }
 

@@ -74,8 +74,8 @@ export class PersonComponent implements OnInit {
                       update: new Date(),
                       enable: new Boolean({})
                  };
-      }
-    )
+        }
+      )
     }
 
-}
+  }
