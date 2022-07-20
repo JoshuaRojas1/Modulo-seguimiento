@@ -1,6 +1,7 @@
 package edu.yavirac.crmbackend.feature.opportunity;
 
-import java.sql.Date;
+
+import java.sql.Timestamp;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
@@ -23,8 +24,9 @@ public class Opportunity {
     private long vendedorId;
     @Column("campania_id")
     private long campaniaId;
-    private Date created;
-    private Date updated;
+    private Timestamp created;
+    private Timestamp updated;
     private boolean enable;
+    private String descripcion;
     
 }

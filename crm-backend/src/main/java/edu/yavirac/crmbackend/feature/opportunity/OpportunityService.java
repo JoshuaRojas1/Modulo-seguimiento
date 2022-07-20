@@ -28,4 +28,13 @@ public class OpportunityService {
     public List<Opportunity> findAll(){
         return opportunityRepository.findAll();
     }
+
+    public List<Opportunity> findByDescripcion(String term){
+
+        return opportunityRepository.findByDescripcionLikeIgnoreCase(term);
+    }   
+    
+   
+
 }
+

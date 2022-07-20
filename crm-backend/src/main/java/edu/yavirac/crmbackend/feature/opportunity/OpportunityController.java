@@ -46,12 +46,16 @@ public class OpportunityController {
         return "Registro Eliminado :)";
     }
 
-    @GetMapping("/all")
+    @GetMapping("/findAll")
     public List findAll(){
         return opportunityService.findAll();
     }
 
-
-
+   
+    @GetMapping("/findByDescripcion/{term}")
+    public List<Opportunity> findByDescripcion(@PathVariable String term){
+        return opportunityService.findByDescripcion(term+"%");
+    }
+    
 }   
 
