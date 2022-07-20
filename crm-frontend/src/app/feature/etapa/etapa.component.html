@@ -1,0 +1,41 @@
+<div class="grid justify-center mt-4 gap-2 ">
+  <div class="card bg-base-100 shadow-2xl shadow-black">
+    <div class="card-body">
+      <h2 class="card-title justify-center uppercase">Crud de <span class="text-primary">etapa</span></h2>
+
+      <div class="grid">
+        <label for="">Nombre</label>
+        <input class="input input-primary mb-2" type="text" placeholder="" [(ngModel)]="currentEtapa.nombre">
+        <label for="">Codigo</label>
+        <input class="input input-primary" type="text" placeholder="" [(ngModel)]="currentEtapa.dni">
+        <label>Fecha de creación:</label>
+       <input class="input input-primary m-3"  type="date" name="creación"  [(ngModel)]="currentEtapa.created"/>
+     <label>Fecha de actualización:</label>
+       <input class="input input-primary m-3" type="date" name="actualización" [(ngModel)]="currentEtapa.updated"/>
+
+     <div class="form-control">
+       <label class="label cursor-pointer">
+         <span class="label-text">Activo</span>
+         <input type="checkbox" class="toggle toggle-primary" checked [(ngModel)]="currentEtapa.enable" />
+       </label>
+
+      </div>
+      <div class="card-actions justify-end">
+        <button class="btn btn-primary btn-sm" (click)="save()" >Guardar</button>
+        <button class="btn btn-primary btn-sm">Cancelar</button>
+      </div>
+    </div>
+  </div>
+  <div class="card card-compact  bg-green-100 shadow-2xl shadow-black">
+    <div class="card-body">
+      <div class="card-title">Advertencia</div>
+
+    </div>
+    <p class="text-xs p-4">No podra recuperar la data despues de Eliminar</p>
+    <div class="card-actions justify-end ">
+      <button class="btn btn-primary btn-sm m-4" (click)="delete()" >Eliminar</button>
+
+    </div>
+  </div>
+</div>
+

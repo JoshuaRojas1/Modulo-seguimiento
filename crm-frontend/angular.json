@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "crud-opportunities-crm-frontend": {
+    "crm-frontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/crud-opportunities-crm-frontend",
+            "outputPath": "dist/crm-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "crud-opportunities-crm-frontend:build:production"
+              "browserTarget": "crm-frontend:build:production"
             },
             "development": {
-              "browserTarget": "crud-opportunities-crm-frontend:build:development"
+              "browserTarget": "crm-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "crud-opportunities-crm-frontend:build"
+            "browserTarget": "crm-frontend:build"
           }
         },
         "test": {
@@ -99,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": "64f54b41-5788-47b2-838d-ef89edfffd1b"
   }
 }

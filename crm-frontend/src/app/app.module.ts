@@ -5,13 +5,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OpportunityComponent } from './feature/opportunity/opportunity.component';
+import { EtapaComponent } from './feature/etapa/etapa.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OpportunityComponent
-
+    EtapaComponent
   ],
   imports: [
     BrowserModule,
