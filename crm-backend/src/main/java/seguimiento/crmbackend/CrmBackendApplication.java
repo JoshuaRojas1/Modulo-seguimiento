@@ -1,4 +1,4 @@
-package edu.yavirac.crmbackend;
+package seguimiento.crmbackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

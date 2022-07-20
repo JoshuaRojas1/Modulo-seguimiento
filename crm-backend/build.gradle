@@ -1,10 +1,10 @@
 plugins {
-	id 'org.springframework.boot' version '2.6.10-SNAPSHOT'
-	id 'io.spring.dependency-management' version '1.0.12.RELEASE'
+	id 'org.springframework.boot' version '2.7.1'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
 }
 
-group = 'edu.yavirac'
+group = 'seguimiento'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
@@ -16,8 +16,6 @@ configurations {
 
 repositories {
 	mavenCentral()
-	maven { url 'https://repo.spring.io/milestone' }
-	maven { url 'https://repo.spring.io/snapshot' }
 }
 
 dependencies {

@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'edu.yavirac.crm-backend' is invalid and this project uses 'edu.yavirac.crmbackend' instead.
+* The original package name 'seguimiento.crm-backend' is invalid and this project uses 'seguimiento.crmbackend' instead.
 
 # Getting Started
 
@@ -9,11 +9,11 @@ The following was discovered as part of building this project:
 For further reference, please consider the following sections:
 
 * [Official Gradle documentation](https://docs.gradle.org)
-* [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.6.10-SNAPSHOT/gradle-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.6.10-SNAPSHOT/gradle-plugin/reference/html/#build-image)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/2.6.10-SNAPSHOT/reference/htmlsingle/#web)
-* [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/2.6.10-SNAPSHOT/reference/htmlsingle/#using.devtools)
-* [Spring Data JDBC](https://docs.spring.io/spring-boot/docs/2.6.10-SNAPSHOT/reference/htmlsingle/#data.sql.jdbc)
+* [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.7.1/gradle-plugin/reference/html/)
+* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.7.1/gradle-plugin/reference/html/#build-image)
+* [Spring Web](https://docs.spring.io/spring-boot/docs/2.7.1/reference/htmlsingle/#web)
+* [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/2.7.1/reference/htmlsingle/#using.devtools)
+* [Spring Data JDBC](https://docs.spring.io/spring-boot/docs/2.7.1/reference/htmlsingle/#data.sql.jdbc)
 
 ### Guides
 The following guides illustrate how to use some features concretely:
