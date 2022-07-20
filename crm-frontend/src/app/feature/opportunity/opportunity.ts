@@ -7,5 +7,6 @@ export interface Opportunity{
   campaniaId: number,
   created: Date,
   updated: Date,
-  enable: boolean
+  enable: boolean,
+  descripcion: string
 }

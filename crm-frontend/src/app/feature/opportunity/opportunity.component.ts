@@ -19,7 +19,8 @@ export class OpportunityComponent implements OnInit {
     campaniaId: 0,
     created: new Date,
     updated: new Date,
-    enable: false
+    enable: false,
+    descripcion: ""
   };
 
   constructor(
@@ -54,7 +55,8 @@ export class OpportunityComponent implements OnInit {
           campaniaId: 0,
           created: new Date,
           updated: new Date,
-          enable: false
+          enable: false,
+          descripcion: ""
         };
       }
     )

@@ -31,5 +31,13 @@ export class OpportunityService {
       return this.http.get<Opportunity>(this.url+"/"+id, this.httpOptions);
     }
 
+    public findAll(): Observable<Opportunity[]>{
+      return this.http.get<Opportunity[]>(this.url+"/findAll", this.httpOptions);
+    }
+
+    public findByDescripcion(term: string): Observable<Opportunity[]>{
+      return this.http.get<Opportunity[]>(this.url+"/findByDescripcion/"+term, this.httpOptions);
+
+    }
 
 }
