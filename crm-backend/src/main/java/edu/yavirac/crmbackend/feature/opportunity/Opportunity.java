@@ -28,5 +28,6 @@ public class Opportunity {
     private Timestamp updated;
     private boolean enable;
     private String descripcion;
+    private Long phaseId;
     
 }
