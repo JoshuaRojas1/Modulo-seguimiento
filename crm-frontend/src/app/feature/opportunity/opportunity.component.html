@@ -25,8 +25,9 @@
             <input type="checkbox" class="toggle" checked="" [(ngModel)]="currentOpportunity.enable" />
           </label>
         </div>
+        <app-phase-combobox [idInput]="currentOpportunity.phaseId" (currentPhaseId)="currentOpportunity.phaseId = $event"></app-phase-combobox>
 
-        <app-city-combobox></app-city-combobox>
+
       </div>
       <div class="card-actions justify-end">
 

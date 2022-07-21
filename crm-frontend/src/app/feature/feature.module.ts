@@ -6,7 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { OpportunityComponent } from './opportunity/opportunity.component';
 import { OpportunityToolbarComponent } from './opportunity/toolbar/opportunity-toolbar.component';
 import { OpportunityListComponent } from './opportunity/list/opportunity-list.component';
-import { CityComboboxComponent } from './city/city-combobox/city-combobox.component';
+import { PhaseComboboxComponent } from './phase/phase-combobox/phase-combobox.component';
+
 
 
 
@@ -16,7 +17,7 @@ import { CityComboboxComponent } from './city/city-combobox/city-combobox.compon
     OpportunityComponent,
     OpportunityToolbarComponent,
     OpportunityListComponent,
-    CityComboboxComponent
+    PhaseComboboxComponent,
 
 
 

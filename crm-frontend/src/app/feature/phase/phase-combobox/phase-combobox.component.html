@@ -1,0 +1,10 @@
+<select #phaseSelect class="select select-primary w-full max-w-xs" (change)="onChange(phaseSelect.value)">
+  <option disabled selected>Selecione la etapa</option>
+  <option *ngFor="let phase of phases"
+  [value]="phase.id"
+  [selected]="phase.id === idInput"
+  >
+    {{phase.name}}
+  </option>
+
+</select>

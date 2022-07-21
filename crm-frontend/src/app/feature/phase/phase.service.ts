@@ -1,25 +1,24 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { City } from './city';
+import { Phase } from './phase';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CityService {
+export class PhaseService {
 
   constructor(
     private http: HttpClient
   ) { }
-
   private httpOptions = {
     headers: new HttpHeaders({"Content-Type":"application/json"})
   }
 
-  private url:string = "http://localhost:8080/api/city";
+  private url:string = "http://localhost:8080/api/phase"
 
-  public findAll(): Observable<City[]>{
-    return this.http.get<City[]>(this.url+"/findAll", this.httpOptions);
+  public findAll(): Observable<Phase[]>{
+    return this.http.get<Phase[]>(this.url+"/findAll", this.httpOptions);
   }
 
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Opportunity } from './opportunity';
 import { OpportunityService } from './opportunity.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-opportunity',
@@ -10,22 +10,12 @@ import { ActivatedRoute } from '@angular/router';
 export class OpportunityComponent implements OnInit {
 
 
-  currentOpportunity: Opportunity = {
-    opportunityId: 0,
-    prospectoId: 0,
-    monto: 0,
-    etapaId: 0,
-    vendedorId: 0,
-    campaniaId: 0,
-    created: new Date,
-    updated: new Date,
-    enable: false,
-    descripcion: ""
-  };
+  currentOpportunity: Opportunity = this.resetOpportunity();
 
   constructor(
     private opportunityService: OpportunityService,
-    private activateRouter: ActivatedRoute
+    private activateRouter: ActivatedRoute,
+    private route: Router
   ) { }
 
   ngOnInit(): void {
@@ -46,18 +36,8 @@ export class OpportunityComponent implements OnInit {
     .subscribe(
       (response) => {
         console.log("registro Guardado :)");
-        this.currentOpportunity = {
-          opportunityId: 0,
-          prospectoId: 0,
-          monto: 0,
-          etapaId: 0,
-          vendedorId: 0,
-          campaniaId: 0,
-          created: new Date,
-          updated: new Date,
-          enable: false,
-          descripcion: ""
-        };
+        this.currentOpportunity = this.resetOpportunity();
+        this.route.navigate(['/layout/opportunity-list'])
       }
     )
   }
@@ -70,4 +50,23 @@ export class OpportunityComponent implements OnInit {
       }
     )
   }
+
+  resetOpportunity(){
+    return this.currentOpportunity = {
+      opportunityId: 0,
+      prospectoId: 0,
+      monto: 0,
+      etapaId: 0,
+      vendedorId: 0,
+      campaniaId: 0,
+      created: new Date,
+      updated: new Date,
+      enable: false,
+      descripcion: "",
+      phaseId: 0
+    };
+
+  }
+
+
 }

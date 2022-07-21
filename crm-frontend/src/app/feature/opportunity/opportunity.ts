@@ -9,4 +9,5 @@ export interface Opportunity{
   updated: Date,
   enable: boolean,
   descripcion: string
+  phaseId: number
 }
