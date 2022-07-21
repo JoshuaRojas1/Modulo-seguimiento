@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin ({"*"})
-@RequestMapping ("api/asesor")
+@RequestMapping ("/api/asesor")
 public class AsesorController {
 
 
