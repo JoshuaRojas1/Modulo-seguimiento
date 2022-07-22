@@ -12,7 +12,7 @@ export class AsesorService {
   private httpOptions = {
     headers: new HttpHeaders({"Content-Type":"aplication/json"})
   }
-  private url ="http://localhost:8080/api/asesor";
+  private url ="https://1726594698-back.sistemaagil.net/api/asesor";
 
 
   constructor(
