@@ -1,14 +1,11 @@
 <div class="grid justify-center mt-10 gap-2">
  <div class="card card-compact bg-base-100 shadow-2xl shadow-black">
    <div class="card-body items-center text-center">
-    <h2 class="card-title font-bold uppercase justify-center">Crud<span class="text-primary">equipo ventas</span></h2>
+    <h2 class="card-title font-bold uppercase justify-center">Crud<span class="text-primary">equipo comercial</span></h2>
     <div class="grid ">
-    <label>Nombre:</label>
-    <input class="input input-primary m-3" type="text" placeholder="Ejemplo: Ana Torres"
+    <label>Nombre del equipo:</label>
+    <input class="input input-primary m-3" type="text" placeholder="ejemplo: ventas directas"
     [(ngModel)]="currentPerson.name">
-    <label>Identificación:</label>
-    <input class="input input-primary m-3" type="text" placeholder="Ejemplo: 1723748100"
-    [(ngModel)]="currentPerson.dni">
 
     <label>Fecha de creación:</label>
       <input class="input input-primary m-3"  type="date" name="creación"  [(ngModel)]="currentPerson.create"/>
@@ -24,17 +21,8 @@
     </div>
     </div>
     <div class="card-actions">
-      <button class="btn bg-yellow-700 btn-sm">Cancelar</button>
-      <button class="btn  bg-blue-700 btn-sm" (click)="save()" >Guardar</button>
-     </div>
-     <div class="card card-compact bg-red-700 shadow-2xl shadow-black mt-7">
-       <div class="card-body ">
-         <div class="card-title">Precaución!</div>
-         <p class="text-s p-1">Recuerde que luego de la eliminación no se podra recuperar la data..</p>
-         <div class="card-actions justify-end">
-           <button class="btn btn-warning btn-sm m-4" (click)="delete()">Eliminar</button>
-         </div>
-       </div>
+      <button class="btn  btn-secondary btn-sm">Cancelar</button>
+      <button class="btn  btn-primary btn-sm" (click)="save()" >Guardar</button>
      </div>
    </div>
  </div>

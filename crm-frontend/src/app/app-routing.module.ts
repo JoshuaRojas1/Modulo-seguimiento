@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { PersonComponent } from './feature/person/person.component';
 
 const routes: Routes = [
-  {path: 'person', component:PersonComponent},
-  {path: 'person/:id', component:PersonComponent}
+  {path: 'equipo', component:PersonComponent},
+  {path: 'equipo/:id', component:PersonComponent}
 ];
 
 @NgModule({
