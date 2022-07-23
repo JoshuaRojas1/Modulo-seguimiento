@@ -13,7 +13,7 @@ export class EtapaComponent implements OnInit {
   currentEtapa: Etapa = {
     etapaId: 0,
     nombre: "",
-    dni: "",
+
     created: new Date(),
     updated: new Date(),
     enable: new Boolean({})
@@ -45,7 +45,7 @@ export class EtapaComponent implements OnInit {
         this.currentEtapa = {
         etapaId: 0,
         nombre: "",
-        dni: "",
+        
         created: new Date(),
         updated: new Date(),
         enable: new Boolean({})
@@ -72,7 +72,7 @@ export class EtapaComponent implements OnInit {
         this.currentEtapa = {
         etapaId: 0,
         nombre: "",
-        dni: "",
+
         created: new Date(),
         updated: new Date(),
         enable: new Boolean({})
