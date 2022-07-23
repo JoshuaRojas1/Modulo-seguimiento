@@ -1,4 +1,4 @@
-package eduyaviracjef.crmbakendjef.feauter.person;
+package eduyaviracjef.crmbakendjef.feauter.equipo;
 
 import java.util.List;
 

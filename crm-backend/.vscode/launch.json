@@ -6,16 +6,10 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch Current File",
+            "name": "Launch CrmBakendJefApplication",
             "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Launch CrudOpportunitiesCrmBackendApplication",
-            "request": "launch",
-            "mainClass": "edu.yavirac.crudopportunitiescrmbackend.CrudOpportunitiesCrmBackendApplication",
-            "projectName": "crud-opportunities-crm-backend"
+            "mainClass": "eduyaviracjef.crmbakendjef.CrmBakendJefApplication",
+            "projectName": "crm-bakend-jef"
         }
     ]
 }

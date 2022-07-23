@@ -1,4 +1,4 @@
-package eduyaviracjef.crmbakendjef.feauter.person;
+package eduyaviracjef.crmbakendjef.feauter.equipo;
 
 import java.sql.Date;
 import org.springframework.data.annotation.Id;
@@ -13,7 +13,6 @@ public class Person {
     @Id
     private long id;
     private String name;
-    private String  dni;
     private Date create;
     private Date update;
     private Boolean enable;
