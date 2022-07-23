@@ -1,15 +1,15 @@
-package edu.yavirac.crmbackend.feature.person;
+package edu.yavirac.crmbackend.feature.opportunity;
 
 import org.springframework.data.annotation.Id;
 
 import lombok.Data;
 
 @Data
-public class PersonAuthority {
-    
+public class OpportunityPerson {
+
     @Id
     private long id;
+    private Long opportunityId;
     private Long personId;
-    private Long authorityId;
-
+    
 }

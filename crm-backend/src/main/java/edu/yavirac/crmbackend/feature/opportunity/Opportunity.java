@@ -2,9 +2,12 @@ package edu.yavirac.crmbackend.feature.opportunity;
 
 
 import java.sql.Timestamp;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.MappedCollection;
 import org.springframework.data.relational.core.mapping.Table;
 
 import lombok.Data;
@@ -29,5 +32,8 @@ public class Opportunity {
     private boolean enable;
     private String descripcion;
     private Long phaseId;
+
+    @MappedCollection(idColumn = "opportunity_id")
+    private Set<OpportunityPerson> persons = new HashSet<>();
     
 }

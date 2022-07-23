@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin({"*"})
 @RequestMapping("/api/person")
+@CrossOrigin({"*"})
 public class PersonController {
 
     @Autowired
@@ -32,7 +32,7 @@ public class PersonController {
         return personService.save(person);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/findById/{id}")
     public Person findById(@PathVariable long id){
         return personService.findById(id);
     }
