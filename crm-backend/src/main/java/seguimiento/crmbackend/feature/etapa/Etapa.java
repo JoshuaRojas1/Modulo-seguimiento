@@ -17,7 +17,7 @@ public class Etapa{
     
     private long etapaId;   
     private String nombre;
-    private String dni;
+
     private Date created;
     private Date updated;
     private Boolean enable;
